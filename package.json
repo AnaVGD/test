@@ -1,4 +1,5 @@
 {
+  "homepage": "https://AnaVGD.github.io/test",
   "name": "brain-boost",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "export": "next export",
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.1.14",
@@ -41,6 +45,7 @@
     "eslint-config-next": "15.1.6",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "gh-pages": "^6.3.0"
   }
 }
